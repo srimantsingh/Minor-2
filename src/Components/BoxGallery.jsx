@@ -158,4 +158,3 @@ const BoxGallery = () => {
 
 export default BoxGallery;
 
-
