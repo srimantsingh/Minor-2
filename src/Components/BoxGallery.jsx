@@ -15,7 +15,7 @@ const BoxGallery = () => {
       title: "Professional CV",
       description: "Best for job seekers in corporate fields.",
       imageUrl: "/Resumes/resume2.png",
-      fileUrl: "/resumes/resume2.docx",
+      fileUrl: "/Resumes/resume2.docx",
     viewUrl:"/Resumes/resume2.",
     },
     {
@@ -23,7 +23,7 @@ const BoxGallery = () => {
       title: "Creative CV",
       description: "Great for designers and creatives to showcase work.",
       imageUrl: "/Resumes/resume3.png",
-      fileUrl: "/resumes/resume3.docx",
+      fileUrl: "/Resumes/resume3.docx",
       viewUrl:"/Resumes/resume3.",
     },
     {
@@ -117,12 +117,12 @@ const BoxGallery = () => {
         {boxes.map((box) => (
           <div
             key={box.id}
-            className="bg-white rounded-xl shadow-md hover:shadow-xl transition flex flex-col justify-between aspect-square overflow-hidden"
+            className="bg-white p-1 rounded-xl shadow-md hover:shadow-xl transition flex flex-col justify-between  overflow-hidden"
           >
             <img
               src={box.imageUrl}
               alt={box.title}
-              className="h-2/3 w-full object-cover"
+              className=" rounded-lg w-full object-cover"
             />
             <div className="p-4 flex flex-col justify-between h-1/3">
               <div>
@@ -130,18 +130,11 @@ const BoxGallery = () => {
                 <p className="text-sm text-gray-600">{box.description}</p>
               </div>
               <div className="flex gap-2 mt-2">
-  <a
-    href={box.imageUrl}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex-1 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-center transition-all"
-  >
-    View
-  </a>
+  
   <a
     href={box.fileUrl}
     download
-    className="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-center transition-all"
+    className=" flex-1 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-center transition-all"
   >
     Download
   </a>
